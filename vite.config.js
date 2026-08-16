@@ -7,9 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "remote_app",
+      name: "checkout",
       filename: "remoteEntry.js",
       exposes: {
+        // Modulo principale del microfrontend: lo shell lo importa come "checkout/Checkout".
         './Checkout': './src/components/Checkout'
       },
       shared: ['react','react-dom']

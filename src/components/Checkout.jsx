@@ -460,7 +460,7 @@ export const Checkout = ({ items: initialItems = CATALOG, onOrderPlaced }) => {
 							<button
 								className="co-btn co-btn-primary"
 								onClick={pay}
-								disabled={processing}>
+								disabled={processing || items.length === 0}>
 								{processing ? (
 									<>
 										<span className="co-spinner" /> Elaborazione…
