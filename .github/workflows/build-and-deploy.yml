@@ -65,6 +65,6 @@ jobs:
       with:
         apikey: ${{ secrets.MICROFRONTEND_ORCHESTRATOR_API_KEY }}
         microfrontend-slug: checkout
-        domain: https://console.mfe-orchestrator.dev
+        domain: https://console-dev.mfe-orchestrator.dev
         file-path: './dist'
         version: ${{ inputs.version || github.ref_name }}
